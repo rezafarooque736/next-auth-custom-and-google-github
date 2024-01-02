@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [NextAuth.js](https://next-auth.js.org/) portal to implement signin, signout, forgot password.
 
-## Getting Started
+## 🧩 Introduction:
 
-First, run the development server:
+This is a portal for [next authentication](https://next-auth.js.org/). here you will implement all types of authentication methods like signin, signout, forgot password, with username, password and also using 3rd party provider like google, github, etc.
+
+- 👈 use case in server & client components.
+- 👈 deeply explore the middleware and learn how to extend next auth session.
+- 👈 role based signin and access contents.
+
+## 🪴 Usage
+
+### [open the portals](http://localhost:3000/)
+
+- #### signin page
+
+  - without signin you can not access anything on this portal.
+    ![signin page image](public/images//signin.png)
+
+- #### home page
+
+  - this is page is client compoennt example
+    ![home page image](public/images//home.png)
+
+- #### access denied page
+
+  -only admin can access this page
+  ![access denied page](public/images//access-denied.png)
+
+- #### upload excel sheet with already defined format
+
+- server compoennt example page
+  ![server component image](public/images/server-session.png)
+
+## Technology Stacks:
+
+- [React](https://react.dev/) - A JavaScript library for building user interfaces
+- [Next.js](https://nextjs.org/) - for frontend and backend development.
+- [React Hook Form](https://react-hook-form.com/) - for form creation.
+- [zod](https://zod.dev/) - for schema validation.
+- [prisma](https://prisma.) - is Node.js and TypeScript ORM.
+- [tailwindcss](https://tailwindcss.com/) - A utility-first CSS framework.
+- [shadcn/ui](https://ui.shadcn.com/) - component library build upon tailwindcss.
+- [NextAuth.js](https://next-auth.js.org/) - Authentication for Next.js
+- [React Toastify](https://fkhadra.github.io/react-toastify/introduction) - Notification library for React.
+- [React icons](https://react-icons.github.io/react-icons/) - icons library for React.
+
+## Folder Structure:
+
+- route in app/
+- api in app/api/
+
+## Installation:
 
 ```bash
-npm run dev
-# or
+npm install //install all packages
+npm run dev //start the project
+
+or
+
+yarn
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
