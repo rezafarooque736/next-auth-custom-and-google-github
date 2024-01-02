@@ -15,22 +15,22 @@ This is a portal for [next authentication](https://next-auth.js.org/). here you 
 - #### signin page
 
   - without signin you can not access anything on this portal.
-    ![signin page image](public/images//signin.png)
+    ![signin page image](./images//signin.png)
 
 - #### home page
 
   - this is page is client compoennt example
-    ![home page image](public/images//home.png)
+    ![home page image](./images//home.png)
 
 - #### access denied page
 
   -only admin can access this page
-  ![access denied page](public/images//access-denied.png)
+  ![access denied page](./images//access-denied.png)
 
 - #### upload excel sheet with already defined format
 
 - server compoennt example page
-  ![server component image](public/images/server-session.png)
+  ![server component image](./images/server-session.png)
 
 ## Technology Stacks:
 
