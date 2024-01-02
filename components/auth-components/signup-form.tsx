@@ -16,13 +16,13 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import { SignUpFormSchemaFrontend } from "@/schema";
 import { useRouter } from "next/navigation";
-import { toast } from "react-toastify";
 import { signIn, useSession } from "next-auth/react";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import LogoIcons from "../icons/logo-icons";
 import { useEffect } from "react";
 import LoadingIcons from "../icons/loading-icons";
+import { toast } from "sonner";
 
 const SignUpForm = () => {
   const router = useRouter();
@@ -69,12 +69,18 @@ const SignUpForm = () => {
     const data = await res.json();
     console.log(res);
 
+    console.log({ data });
+
     if (res.ok) {
       router.push("/auth/sign-in");
       toast.success(data.message);
     } else {
       console.error("Registration failed");
-      (toast as any)[data.type](data.message);
+      if (data.type === "warn") {
+        toast.error(data.message);
+      } else {
+        toast.warning(data.message);
+      }
     }
   };
 

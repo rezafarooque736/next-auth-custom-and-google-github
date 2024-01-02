@@ -17,9 +17,9 @@ import Link from "next/link";
 import { signIn, useSession } from "next-auth/react";
 import { SignInFormSchema } from "@/schema";
 import { useRouter, useSearchParams } from "next/navigation";
-import { toast } from "react-toastify";
 import { useEffect } from "react";
 import LoadingIcons from "../icons/loading-icons";
+import { toast } from "sonner";
 
 // import icons
 import { FcGoogle } from "react-icons/fc";

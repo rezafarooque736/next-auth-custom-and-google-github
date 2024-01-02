@@ -6,9 +6,9 @@ export default function LogoIcons() {
     <Image
       src={logo}
       alt="railtel logo"
-      width={50}
-      height={64}
-      className="w-[50px] h-[64px]"
+      width={48}
+      height={60}
+      className="w-[48px] h-[60px] p-2"
     />
   );
 }

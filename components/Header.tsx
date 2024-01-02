@@ -21,7 +21,7 @@ export default function Header() {
         }
       )}
     >
-      <div className="container flex items-center justify-between ">
+      <div className="container flex items-center justify-between">
         <Link href="/">
           <LogoIcons />
         </Link>
