@@ -21,8 +21,6 @@ import { useEffect } from "react";
 import LoadingIcons from "../icons/loading-icons";
 
 // import icons
-import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa";
 import LogoIcons from "../icons/logo-icons";
 import Title from "../ui/title";
 

@@ -22,10 +22,10 @@ import LoadingIcons from "../icons/loading-icons";
 import { toast } from "sonner";
 
 // import icons
-import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa";
 import LogoIcons from "../icons/logo-icons";
 import Title from "../ui/title";
+import GoogleIcons from "../icons/google-icons";
+import GithubIcons from "../icons/github-icons";
 
 const SignInForm = () => {
   const { status: sessionStatus } = useSession();
@@ -141,7 +141,7 @@ const SignInForm = () => {
                 signIn("google");
               }}
             >
-              <FcGoogle size={20} />
+              <GoogleIcons />
             </Button>
             <Button
               variant="outline"
@@ -151,7 +151,7 @@ const SignInForm = () => {
                 signIn("github");
               }}
             >
-              <FaGithub size={20} />
+              <GithubIcons />
             </Button>
           </div>
           <div className="text-center text-sm text-slate-600 mt-3">

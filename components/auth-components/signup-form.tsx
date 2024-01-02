@@ -17,12 +17,12 @@ import Link from "next/link";
 import { SignUpFormSchemaFrontend } from "@/schema";
 import { useRouter } from "next/navigation";
 import { signIn, useSession } from "next-auth/react";
-import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa";
 import LogoIcons from "../icons/logo-icons";
 import { useEffect } from "react";
 import LoadingIcons from "../icons/loading-icons";
 import { toast } from "sonner";
+import GoogleIcons from "../icons/google-icons";
+import GithubIcons from "../icons/github-icons";
 
 const SignUpForm = () => {
   const router = useRouter();
@@ -183,7 +183,7 @@ const SignUpForm = () => {
               signIn("google");
             }}
           >
-            <FcGoogle size={20} />
+            <GoogleIcons />
           </Button>
           <Button
             variant="outline"
@@ -193,7 +193,7 @@ const SignUpForm = () => {
               signIn("github");
             }}
           >
-            <FaGithub size={20} />
+            <GithubIcons />
           </Button>
         </div>
         <p className="text-center text-sm text-slate-600 mt-2">

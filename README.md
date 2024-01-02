@@ -43,7 +43,6 @@ This is a portal for [next authentication](https://next-auth.js.org/). here you 
 - [shadcn/ui](https://ui.shadcn.com/) - component library build upon tailwindcss.
 - [NextAuth.js](https://next-auth.js.org/) - Authentication for Next.js
 - [sonner](https://sonner.emilkowal.ski/) - Notification library for React.
-- [React icons](https://react-icons.github.io/react-icons/) - icons library for React.
 
 ## Folder Structure:
 
